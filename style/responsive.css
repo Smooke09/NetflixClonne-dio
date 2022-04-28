@@ -1,0 +1,29 @@
+/*  Config padrao e variaveis */
+:root{
+    --red:#E50914;
+    --preta:#141414;
+}
+
+@media screen and (max-width: 700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .filmes-principal{
+       background-position: center !important;
+    }
+
+    header .logo{
+        margin: 0 auto;
+    }
+    .box-filme {
+        margin: 0 auto;
+        width: 200px !important;
+        height: 100%;
+    }
+
+    .botao{
+        margin-bottom: 20px;
+    }
+}

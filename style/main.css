@@ -1,0 +1,137 @@
+/* Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+
+/*  Config padrao e variaveis */
+:root{
+    --red:#E50914;
+    --preta:#141414;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Elementos base */
+body {
+    background: var(--preta);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 6px;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--red);
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff
+}
+
+body{
+    height: 120vh;
+}
+
+
+/* filme principal */
+.filmes-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.90) 100%), url('/img/batman.jpg');  
+
+
+    height: 650px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    box-shadow: 4px 4px 6px 0px #0000007d;
+}
+
+.borrao{
+    backdrop-filter: blur(9px);
+    z-index: 1;
+    margin-top: -30px;
+    height: 80px;
+    width: 100%;
+}
+.filmes-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 5%;
+    font-size: 50px;
+}
+
+.botoes{
+    margin-left: 40px;
+}
+
+.botao {
+    background-color: rgba(84, 86, 90, 0.87);
+    border: none;
+    color: #fff;
+
+
+    font-size: 15px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover {
+    background-color: rgba(29, 28, 28, 0.603);
+    color: #fff;
+}
+
+.botao i {
+    margin-right: 8px;
+    font-size: 19px;
+}
+
+.container {
+    margin-left: 40px;
+}
+
+.filmes-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 280px;
+    width: 150px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px 0px #0000007d;
+}
+
+.zx-filme{
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
